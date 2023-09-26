@@ -1,0 +1,35 @@
+.App {
+  font-size: 16px;
+  padding: 100px 50px 50px;
+}
+
+.container img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #40a8f3;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.container h3 {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.container li {
+  list-style-type: none;
+}
+
+.container strong {
+  display: block;
+  font-size: 14px;
+  opacity: 0.4;
+  margin-bottom: 8px;
+}
