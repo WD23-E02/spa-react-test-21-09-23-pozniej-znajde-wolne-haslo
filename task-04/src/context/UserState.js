@@ -1,16 +1,16 @@
-import React from 'react'
-import { UserContext } from './UserContext'
+import React from 'react';
+import { UserContext } from './UserContext';
+import { useState } from 'react';
 
-
-function UserState() {
-    const [ name, setName ] = useState("Rick");
-    const [ location, setLocation ] = useState("Dortmund");
+function UserState({ children }) {
+  const [name, setName] = useState('Rick');
+  const [location, setLocation] = useState('Dortmund');
 
   return (
-    <UserContext>
-      
-    </UserContext>
-  )
+    <UserContext.Provider value={{ name, setName, location, setLocation }}>
+      {children}
+    </UserContext.Provider>
+  );
 }
 
-export default UserState
+export default UserState;
